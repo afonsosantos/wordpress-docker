@@ -13,7 +13,7 @@ $ git clone https://github.com/afonsosantos/wordpress-docker.git wp/
 $ cd wp/
 ```
 
-### Passo 1 - Variáveis de Ambiente
+### Passo 2 - Variáveis de Ambiente
 
 Criar o ficheiro `.env` e preencher as variáveis abaixo:
 
@@ -21,7 +21,7 @@ Criar o ficheiro `.env` e preencher as variáveis abaixo:
 - **MYSQL_USER**=your_wordpress_database_user
 - **MYSQL_PASSWORD**=your_wordpress_database_password
 
-### Passo 2 - Instalar Docker e Docker Compose
+### Passo 3 - Instalar Docker e Docker Compose
 
 1. Instalar o **Docker**:
 
@@ -43,7 +43,7 @@ $ sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docke
 $ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-### Passo 3 - Iniciar os Serviços
+### Passo 4 - Iniciar os Serviços
 
 ```shell
 $ docker-compose up -d
