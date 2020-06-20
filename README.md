@@ -48,3 +48,13 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 ```shell
 $ docker-compose up -d
 ```
+
+### Passo 5 - Certificado SSL
+
+Alterar a seguinte linha no ficheiro `docker-compose.yml`:
+
+```yaml
+command: certonly --webroot --webroot-path=/var/www/html --email <email> --agree-tos --no-eff-email --force-renewal -d <dominio>
+```
+
+Assim, cada vez que o comando `docker-compose up` é executado, o Certbot irá renovar o certificado.
