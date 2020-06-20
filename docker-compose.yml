@@ -54,7 +54,7 @@ services:
     volumes:
       - certbot-etc:/etc/letsencrypt
       - wordpress:/var/www/html
-    command: certonly --webroot --webroot-path=/var/www/html --email afonso.faisca1@gmail.com --agree-tos --no-eff-email --force-renewal -d pyvoice.afonsosantos.tech
+    command: certonly --webroot --webroot-path=/var/www/html --email <email> --agree-tos --no-eff-email --staging -d <dominio>
 
 volumes:
   certbot-etc:
